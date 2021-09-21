@@ -1,38 +1,325 @@
-.App {
+/*styling the header*/
+.navbar{
+ 
+  padding: 0px;
+  background-color: rgb(75, 0, 75);
+}
+li a, .log a{
+  color: white !important;
+  text-decoration: none !important;
+}
+li{
+  line-height: 40px;
+}
+li:hover{
+  border-bottom: solid 3px #ffc107 ;
+}
+.log {
+ margin-left: 300px;
+}
+
+
+
+
+/*styling the logo that located in the header*/
+.logo{
+  width: 30px;
+  padding: 0px;
+}
+
+/*styling of first section for Home page*/
+.hero{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*styling lamp img of first section for Home page*/
+.lamp{
+  position: relative;
+  width: 170px;
+  margin-left: -20px;
+  margin-top: -50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*styling 'Hssss' word under lamp img of first section for Home page*/
+.hssss{
+  position: absolute;
+  z-index: 2;
+  margin-top: 8px;
+  margin-left: 11px;
+}
+
+/*styling search form of first section for Home page*/
+.search1{
+width: 23%;
+}
+
+/*styling image of second section for Home page*/
+.main {
+  position: relative;
+  width: 100%;
+  transform: scaleY(1.1);
+  top: 130px;
+  
+}
+
+
+/*styling above border imgs of second section for Home page*/
+.stu1{
+  position: absolute;
+  right: 0 ;
+  width: 21%;
+  top: 290px;
+  z-index: 2;
+}
+.stu2{
+  position: absolute;
+  left: 0 ;
+  width: 21%;
+  top: 290px;
+  z-index: 2;
+}
+
+/*styling 'how it work' sub section of second section for Home page*/
+.work p{
+  position: absolute;
+ top: 630px;
+  font-size: 1.5em;
+  font-weight: 700;
+  z-index: 2;
+  
+}
+.img1{
+  position: absolute;
+  top: 570px;
+  width: 20%;
+  left: 45%;
+  z-index: 2;
+}
+
+.play{
+  border: solid rgb(75, 0, 75) 2px;
+  top: 870px;
+
+ height: 200px;
+ position: absolute;
+ z-index: 2;
+}
+.play img{
+  width: 70px; 
+  padding-top: 60px;
+  position: absolute;
+ z-index: 2;
+}
+
+/*styling of cards section for Home page*/
+.card-deck{
+  margin-top: 200px;
+}
+.card img{
+  width: 30%;
+  height: 150px;
+}
+.card{
+  border-radius: 15px;
+  overflow: hidden;
+ 
+}
+.card:hover{
+  border-color: rgb(97, 1, 97);
+  transition: 1s border-color;
+}
+.card:hover img{
+ transform: scale(1.4,1.4);
+ transition: 1s transform;
+}
+
+/*styling of form for Register page*/
+.form-log input{
+  border: none !important;
+  border-bottom: solid rgb(170, 169, 169) 1px !important;
+  outline: none !important;
+  border-radius: 0px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.form-log input:focus{
+  border-bottom: solid rgb(75, 0, 75) 2px !important;
+  outline: none !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/*styling of form for create task page*/
+.form-create input{
+  border-radius: 50px !important;
+}
+.form-create input:focus{
+  border-color:  rgb(124, 2, 124) !important;
+  box-shadow: none !important;
+}
+.form-create{
+  background-color: rgba(230, 228, 228, 0.521);
+  border-radius: 30px;
+}
+
+/*styling of form for create task page*/
+td .btn a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+/*make Home page responsive*/
+@media screen and  (max-width:1280px){
+  
+  .card-deck{
+   margin-top: 300px !important;
+ }
+}
+
+@media screen and  (max-width:1200px){
+ .work p{
+   font-size: 1em;
+ }
+ .main{
+   transform: scaleY(1.4);
+ }
+
+}
+@media screen and  (max-width:1100px){
+  .play{
+    top: 770px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .search1{
+    width: 43%;
+    }
+ 
+ }
+ @media screen and  (max-width:900px){
+ 
+  .main{
+    transform: scaleY(1.6);
   }
-  to {
-    transform: rotate(360deg);
+  .card-deck{
+    margin-top: 200px !important;
   }
-}
+   
+ }
+ @media screen and  (max-width:900px){
+ 
+  .main{
+    transform: scaleY(1.6);
+  }
+  
+  .play{
+    top: 670px;
+  }
+  .work p{
+    top: 520px;
+  }
+  .img1{
+    top: 470px;
+
+  }
+  .card-deck{
+    margin-top: 300px !important;
+  }
+   
+ }
+ @media screen and  (max-width:819px){
+  .img1{
+    left:47%;
+  }
+ }
+ @media screen and  (max-width:719px){
+  .img1{
+   width: 25%;
+  }
+  .stu1, .stu2{
+    top: 410px;
+  }
+  .log {
+    margin-left: 0px;
+   }
+   #collapsibleNavbar{
+    position: fixed;
+    top: 80px;
+    background-color: rgba(75, 0, 75, 0.74);
+    z-index: 5;
+    width: 100%;
+  
+  }
+ }
+ @media screen and  (max-width:670px){
+  .main{
+    transform: scaleY(1.9);
+  }
+ }
+ @media screen and  (max-width:600px){
+  .main{
+    transform: scaleY(2.5);
+    top: 210px;
+  }
+  .card-deck{
+    margin-top: 400px !important;
+  }
+ }
+ @media screen and  (max-width:560px){
+  .img1{
+    width: 35%;
+   }
+   .stu1, .stu2{
+     top: 390px;
+   }
+ }
+ @media screen and  (max-width:457px){
+  .work p{
+    top: 570px;
+  }
+  .img1{
+    top: 530px;
+
+  }
+  .play{
+    top: 720px;
+  }
+  .main{
+    transform: scaleY(2.9);
+ 
+  }
+  .stu1, .stu2{
+    top: 400px;
+  }
+  .search1{
+    width: 63%;
+    }
+  
+ }
+ @media screen and  (max-width:400px){
+ 
+  .main{
+    transform: scaleY(3.5);
+ 
+  }
+  .img1{
+   
+    width: 45%;
+  }
+  .stu1, .stu2{
+    top: 400px;
+  }
+ }
+ @media screen and  (max-width:325px){
+ 
+  
+  .work p{
+    top: 590px;
+  }
+  .img1{
+    top: 570px;
+    width: 45%;
+
+  }
+  .stu1, .stu2{
+    top: 500px;
+  }
+ }
